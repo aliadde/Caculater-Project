@@ -42,11 +42,9 @@ function Input() {
               </button>
             </ul>
 
-            <ul
-              className="setadovom"
-              onClick={() => (flagVar2 ? setY(y + "4") : setX(x + "4"))}
-            >
-              <button type="button">
+            <ul className="setadovom">
+              
+              <button type="button" onClick={() => (flagVar2 ? setY(y + "4") : setX(x + "4"))}>
                 <li className="adad4">4</li>
               </button>
               <button
