@@ -9,6 +9,7 @@ function Input() {
     setFlagVar2,
     y,
     setY,
+    equal,
     setEqual,
     setAmaliyat,
     resault,
@@ -16,6 +17,45 @@ function Input() {
     resaultRef,
   } = useContext(calculaterContext);
 
+  //وقتی روی کلید ها کلیک شد ، بیا د چک کنه که تساوی درست است یا نه
+  // درست بود عوضش کن علط که نتیجه روی صفحه پاک بشه
+  const setting1 = () => {
+    setX(x + "1");
+    if (equal) setEqual(false);
+    
+  };
+  const setting2 = () => {
+    setX(x + "2");
+    if (equal) setEqual(false);
+  };
+  const setting3 = () => {
+    setX(x + "3");
+    if (equal) setEqual(false);
+  };
+  const setting4 = () => {
+    setX(x + "4");
+    if (equal) setEqual(false);
+  };
+  const setting5 = () => {
+    setX(x + "5");
+    if (equal) setEqual(false);
+  };
+  const setting6 = () => {
+    setX(x + "6");
+    if (equal) setEqual(false);
+  };
+  const setting7 = () => {
+    setX(x + "7");
+    if (equal) setEqual(false);
+  };
+  const setting8 = () => {
+    setX(x + "8");
+    if (equal) setEqual(false);
+  };
+  const setting9 = () => {
+    setX(x + "9");
+    if (equal) setEqual(false);
+  };
   return (
     <>
       <div id="container" className="bg-indigo-700 border-sky-600 ">
@@ -25,19 +65,19 @@ function Input() {
             <ul className="setaaval">
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "1") : setX(x + "1"))}
+                onClick={() => (flagVar2 ? setY(y + "1") : setting1())}
               >
                 <li className="adad1">1</li>
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "2") : setX(x + "2"))}
+                onClick={() => (flagVar2 ? setY(y + "2") : setting2())}
               >
                 <li className="adad2">2</li>
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "3") : setX(x + "3"))}
+                onClick={() => (flagVar2 ? setY(y + "3") : settin3())}
               >
                 <li className="adad3">3</li>
               </button>
@@ -45,20 +85,20 @@ function Input() {
 
             <ul
               className="setadovom"
-              onClick={() => (flagVar2 ? setY(y + "4") : setX(x + "4"))}
+              onClick={() => (flagVar2 ? setY(y + "4") : setting4())}
             >
               <button type="button">
                 <li className="adad4">4</li>
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "5") : setX(x + "5"))}
+                onClick={() => (flagVar2 ? setY(y + "5") : setting5())}
               >
                 <li className="adad5">5</li>
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "6") : setX(x + "6"))}
+                onClick={() => (flagVar2 ? setY(y + "6") : setting6())}
               >
                 <li className="adad6">6</li>
               </button>
@@ -66,19 +106,19 @@ function Input() {
             <ul className="setasevom">
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "7") : setX(x + "7"))}
+                onClick={() => (flagVar2 ? setY(y + "7") : setting7())}
               >
                 <li className="adad7">7</li>
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "8") : setX(x + "8"))}
+                onClick={() => (flagVar2 ? setY(y + "8") : setting8())}
               >
                 <li className="adad8">8</li>
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "9") : setX(x + "9"))}
+                onClick={() => (flagVar2 ? setY(y + "9") : setting9())}
               >
                 <li className="adad9">9</li>
               </button>
