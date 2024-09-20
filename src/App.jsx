@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { calculaterContext } from "./context.js";
 import Input from "./component/Input.jsx";
 import "./App.css";
@@ -10,6 +10,7 @@ function App() {
   const [equal, setEqual] = useState(false);
   const [amaliyat, setAmaliyat] = useState("");
   const [resault, setResault] = useState("");
+  const resaultRef = useRef("");
   return (
     <>
       <calculaterContext.Provider
@@ -26,6 +27,7 @@ function App() {
           setAmaliyat,
           resault,
           setResault,
+          resaultRef,
         }}
       >
         <Input />

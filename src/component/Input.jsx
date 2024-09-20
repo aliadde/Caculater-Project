@@ -13,6 +13,7 @@ function Input() {
     setAmaliyat,
     resault,
     setResault,
+    resaultRef,
   } = useContext(calculaterContext);
 
   return (

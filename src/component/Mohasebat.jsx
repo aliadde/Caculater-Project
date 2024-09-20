@@ -14,22 +14,27 @@ function Mohasebat() {
     setAmaliyat,
     resault,
     setResault,
+    resaultRef,
   } = useContext(calculaterContext);
 
   const zarb = (x, y) => {
     const r = x * y;
+    resaultRef.current = r;
     setResault(r);
   };
   const taghsim = (x, y) => {
     const r = x / y;
+    resaultRef.current = r;
     setResault(r);
   };
   const jam = (x, y) => {
     const r = x + y;
+    resaultRef.current = r;
     setResault(r);
   };
   const tafrigh = (x, y) => {
     const r = x - y;
+    resaultRef.current = r;
     setResault(r);
   };
   useEffect(() => {
@@ -84,7 +89,7 @@ function Mohasebat() {
     <div>
       <div className="pt-6 text-4xl showresualt">
         {flagVar2 ? ` ${y}` : ` ${x}`}
-        {equal ? `resault :${resault}` : ""}
+        {equal ? `resault :${resaultRef.current}` : ""}
       </div>
     </div>
   );
