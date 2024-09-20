@@ -87,9 +87,9 @@ function Mohasebat() {
   }
   return (
     <div>
-      <div className="pt-6 text-4xl showresualt">
+      <div className="pt-6 text-2xl showresualt">
         {flagVar2 ? ` ${y}` : ` ${x}`}
-        {equal ? `resault :${resaultRef.current}` : ""}
+        {equal ? `=>${resaultRef.current}` : ""}
       </div>
     </div>
   );
