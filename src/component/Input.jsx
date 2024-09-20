@@ -22,7 +22,6 @@ function Input() {
   const setting1 = () => {
     setX(x + "1");
     if (equal) setEqual(false);
-    
   };
   const setting2 = () => {
     setX(x + "2");
@@ -77,7 +76,7 @@ function Input() {
               </button>
               <button
                 type="button"
-                onClick={() => (flagVar2 ? setY(y + "3") : settin3())}
+                onClick={() => (flagVar2 ? setY(y + "3") : setting3())}
               >
                 <li className="adad3">3</li>
               </button>
